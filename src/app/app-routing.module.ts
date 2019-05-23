@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   { path: '', redirectTo: 'pelis', pathMatch: 'full' },
   { path: 'pelis', loadChildren: './pages/pelis/pelis.module#PelisPageModule' },
-  { path: 'peli-details', loadChildren: './pages/peli-details/peli-details.module#PeliDetailsPageModule' },
+  { path: 'peli/:id', loadChildren: './pages/peli-details/peli-details.module#PeliDetailsPageModule' },
 ];
 
 @NgModule({
