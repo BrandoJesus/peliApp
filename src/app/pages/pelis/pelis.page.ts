@@ -18,7 +18,7 @@ export class PelisPage implements OnInit {
   ngOnInit() {
   }
 
-  searchChanged(): void {
+  searchChanged(e): void {
     this.results = this.peliService.searchMovies(this.term, this.type);
   }
 
